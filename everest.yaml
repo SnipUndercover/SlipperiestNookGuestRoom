@@ -1,0 +1,8 @@
+- DLL: bin/SlipperiestNook.YoinkySploinky.dll
+  Name: Spooooky_SlipperiestNookGuestRoom
+  Version: 0.0.1
+  Dependencies:
+    - Name: EverestCore
+      Version: 1.6194.0
+    - Name: ExtendedVariantMode
+      Version: 0.39.2

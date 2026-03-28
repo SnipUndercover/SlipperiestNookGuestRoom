@@ -1,0 +1,4 @@
+triggers.SlipperiestNook/CrumpleBoostTrigger.placements.name.enable=Crumple Boost (Enable)
+triggers.SlipperiestNook/CrumpleBoostTrigger.placements.name.disable=Crumple Boost (Disable)
+triggers.SlipperiestNook/CrumpleBoostTrigger.mode.enable=Enable
+triggers.SlipperiestNook/CrumpleBoostTrigger.mode.disable=Disable
