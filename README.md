@@ -31,8 +31,8 @@ If Madeline stops crouching or becomes airborne, there are `MaxWindUpLeniencyTim
 **Next, the player flash.** It is only applied when `WindUpStrength` is greater than or equal to `FlashStrengthThreshold` *(`0.25f`, or 25%)*.
 
 The implementation uses two things:
-1. a screen-sized (320&times;180) `FlashPlayerRT` `VirtualRenderTarget` *(a wrapper for FNA's `RenderTarget2D`)* 
-1. a custom `FlashShader` `CustomEffect` that interpolates the colors of a texture to white depending on the value of `flash_strength`; a `float` that ranges from `0f` to `1f`.
+1. a screen-sized (320&times;180) `FlashPlayerRT` `VirtualRenderTarget` *(a wrapper for FNA's `RenderTarget2D`, which is like a texture that you can also render to)*
+1. a custom `FlashShader` `CustomEffect` that interpolates the colors of a texture to white depending on the value of `flash_strength`; a `float` that ranges from `0f` to `1f`
 
 The player sprite *(not hair!)* is first rendered to `FlashPlayerRT`. This is done by hijacking the `SpriteBatch` mid-`Player.Render`:
 - restart the `SpriteBatch`, swapping in our `FlashPlayerRT` rendertarget and replacing the transformation matrix with the identity matrix
